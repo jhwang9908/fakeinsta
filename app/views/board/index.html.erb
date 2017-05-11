@@ -6,6 +6,7 @@
 
 <% @posts.each do |p| %>
 <div class="well">
+    <img height="50" width="50" src="<%= p.photo.url %>">
 <a href="/board/<%= p.id %>">제목 : <%= p.title %></a><br>
 
 </div>
